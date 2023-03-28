@@ -1,0 +1,172 @@
+.header{
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(240, 239, 239);
+    z-index: 100;
+    cursor: pointer;
+}
+
+.left-section{
+    align-items: center;
+    display: flex;
+}
+
+.middle-section{
+    flex: 1;
+    margin-left: 70px;
+    margin-right: 35px;
+    max-width: 500px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.right-section{
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+.ham{
+    height: 20px;
+    margin-left: 20px;
+    margin-right: 15px;
+}
+
+.youtube{
+    height: 50px;
+}
+
+.search {
+    height: 44px;
+    width: 66px;
+    margin-right: 10px;
+    background-color: rgb(240, 239, 239);
+    border: solid;
+    border-color: rgb(240, 239, 239);
+    
+}
+
+.search,
+.mic,
+.video-create,
+.apps,
+.notify{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    white-space: nowrap;
+    align-items: center;
+}
+.search .tooltip,
+.mic .tooltip,
+.video-create .tooltip,
+.apps .tooltip,
+.notify .tooltip
+{
+    font-family: Montserrat;
+    position: absolute;
+    background-color: gray;
+    color: white;
+    padding: 4px 10px 4px 10px;
+    border-radius: 2px;
+    font-size: 13px;
+    bottom: -30px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+}
+
+.search:hover .tooltip,
+.mic:hover .tooltip,
+.video-create:hover .tooltip,
+.apps:hover .tooltip,
+.notify:hover .tooltip{
+    opacity: 1;
+}
+
+.search-icon{
+    height: 25px;
+}
+
+.mic{
+    height: 44px;
+    width: 44px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(240, 239, 239);
+
+}
+
+.mic-icon{
+    height: 24px;
+}
+
+.search-bar{
+    flex: 1;
+    height: 40px;
+    padding-left:12px ;
+    font-size: 16px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(192, 192, 192);
+    border-radius: 2px;
+    box-shadow: inset 1px 2px 5px rgba(0, 0, 0, 0.15);
+    margin-left: -1px;
+    width: 0;
+}
+
+.search-bar::placeholder{
+    font-family: Montserrat;
+    font-size: 16px;
+}
+
+.video-icon{
+    height:24px
+}
+
+.notify-icon{
+    height: 24px;
+}
+
+.notify{
+    position: relative;
+}
+
+.badge{
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    background-color: red;
+    color: white;
+    font-family: Montserrat;
+    font-size: 8px;
+    font-weight: 500;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 10px;
+    
+}
+
+.app-icon{
+    height: 24px;
+}
+
+.profile-pic{
+    height: 32px;
+    border-radius: 16px;
+}
